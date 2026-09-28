@@ -1,6 +1,9 @@
 
 import './App.css'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+import ContactSection from './components/ContactSection'
+import AboutSection from './components/AboutSection'
 
 function App() {
  
@@ -8,8 +11,9 @@ function App() {
   return (<div className="app">
     <header className="app-header">
  <Navbar />
-      <h1>Welcome to the App</h1>
-      
+     <AboutSection/>
+      <ContactSection/>
+      <Footer/>
     </header>
   </div>)
     

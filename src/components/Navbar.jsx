@@ -1,26 +1,19 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
+import { Link } from "react-router-dom";
+import NavLink from "./NavLink";
+
 
 export default function Navbar() {
-  const links = [
-    { label: "About", path: "/" },
-    { label: "Skills", path: "/skills" },
-    { label: "Projects", path: "/projects" },
-    { label: "Experience", path: "/experience" },
-    { label: "Contact", path: "/contact" },
-  ];
-
-  return (
+ return (
     <nav className="navbar">
-      <ul className="nav-links">
-        {links.map((link) => (
-          <li key={link.path}>
-            <Link to={link.path}>{link.label}</Link>
-          </li>
-        ))}
-      </ul>
+      <Link to="/" className="nav-name">
+        Emman Roy Pielago
+      </Link>
+
+      <NavLink href="/" label="About" />
+      <NavLink href="/skills" label="Skills" />
+      <NavLink href="/projects" label="Projects" />
+      <NavLink href="/experience" label="Experience" />
+      <NavLink href="/contact" label="Contact" />
     </nav>
   );
 }
-

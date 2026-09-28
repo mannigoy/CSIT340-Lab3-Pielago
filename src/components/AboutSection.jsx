@@ -1,3 +1,5 @@
+import Fact from './Fact'
+
 export default function AboutSection() {
   return (
     <section id="about">
@@ -11,22 +13,10 @@ export default function AboutSection() {
       </p>
 
       <dl>
-        <div>
-          <dt>Course</dt>
-          <dd>BS Information Technology</dd>
-        </div>
-        <div>
-          <dt>Year level</dt>
-          <dd>Third year</dd>
-        </div>
-        <div>
-          <dt>School</dt>
-          <dd>CIT-U</dd>
-        </div>
-        <div>
-          <dt>Based in</dt>
-          <dd>Cebu City</dd>
-        </div>
+        <Fact label="Course" value="BS Information Technology" />
+        <Fact label="Year level" value="Third year" />
+        <Fact label="School" value="CIT-U" />
+        <Fact label="Based in" value="Cebu City" />
       </dl>
     </section>
   );

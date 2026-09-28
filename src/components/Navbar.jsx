@@ -9,7 +9,7 @@ export default function Navbar() {
         Emman Roy Pielago
       </Link>
 
-      <NavLink href="/" label="About" />
+      <NavLink href="/about" label="About" />
       <NavLink href="/skills" label="Skills" />
       <NavLink href="/projects" label="Projects" />
       <NavLink href="/experience" label="Experience" />

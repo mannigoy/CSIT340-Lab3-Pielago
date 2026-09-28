@@ -1,16 +1,11 @@
-# React + Vite
+# Pielago — Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio website built for **CSIT340**. It's a single-page site that presents my work and background in a clean, simple layout.
 
-Currently, two official plugins are available:
+The page is a short scrollable profile: an intro, a bit about who I am, the tools I work with, a handful of projects I've built, a timeline of where I've studied and worked, and ways to reach me. Navigation is a sticky bar at the top that jumps to each section.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Everything is a static, responsive page — no backend, no data fetching, just components rendering hardcoded content.
 
-## React Compiler
+## Built With
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+React, Vite, and Tailwind CSS.

@@ -1,7 +1,9 @@
 export default function Footer() {
   return (
-    <footer className="footer">
-      <p>&copy; 2024 My Portfolio. All rights reserved.</p>
-    </footer>
+    <footer className="border-t border-stone-200">
+    <div className="max-w-4xl mx-auto px-6 py-8 text-sm text-stone-500">
+      © 2026 Emman Roy Pielago. Built with React and Tailwind CSS for CSIT340.
+    </div>
+  </footer>
   );
 }

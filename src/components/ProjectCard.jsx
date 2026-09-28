@@ -1,11 +1,13 @@
 export default function ProjectCard({ year, title, description, tech, link }) {
   return (
-    <article>
-      <p >{year}</p>
-      <h3 >{title}</h3>
-      <p >{description}</p>
-      <p>{tech}</p>
-      <a href={link}>View on GitHub</a>
+    <article className="rounded-lg border border-stone-200 p-6 hover:border-stone-400">
+      <p className="text-xs font-medium uppercase tracking-wide text-stone-500">{year}</p>
+      <h3 className="mt-2 text-lg font-semibold">{title}</h3>
+      <p className="mt-2 text-sm leading-relaxed text-stone-600">{description}</p>
+      <p className="mt-4 text-sm text-stone-500">{tech}</p>
+      <a href={link} className="mt-4 inline-block text-sm font-medium text-stone-500 hover:text-stone-700">
+        View on GitHub
+      </a>
     </article>
   )
 }
